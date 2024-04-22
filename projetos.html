@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Heart.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+<body class="portfolio">
+    <header class="portfolio__header">
+        <div class="button__color">
+            <button onclick="ativarModoClaro()"><img class="dark__mode__icon" src="/light-mode.png" alt="Dark mode icon"></button>
+            <button onclick="ativarModoEscuro()"><img class="light__mode__icon" src="/mode.png" alt="Light mode icon"></button>
+        </div>
+        <nav class="portfolio__header__nav">
+            <div class="portfolio__header__nav__icons">
+                <div class="portfolio__header__nav__icon">
+                    <img class="icon__nav" src="Home.png" alt="Imagem de uma casinha">
+                    <a class="text__nav" href="index.html">Home</a>
+                </div>
+            </div>
+
+            <div class="portfolio__header__nav__icons">
+                <div class="portfolio__header__nav__icon">
+                    <img class="icon__nav" src="Desktop.png" alt="Imagem de um desktopzinho">
+                    <a class="text__nav" href="habilidades.html">Habilidades</a>
+                </div>
+            </div>
+
+            <div class="portfolio__header__nav__icons">
+                <div data-context="underline" class="portfolio__header__nav__icon">
+                    <img class="icon__nav" src="Heart.png" alt="Imagem de um coraçãozinho">
+                    <a class="text__nav" href="projetos.html">Projetos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="portfolio__main">
+        <section class="portfolio__main__content">
+            <div class="portfolio__main__content__text">
+                <h1 class="portfolio__main__content__text__title" id="projetos">Meus <span>Projetos</span></h1>
+                <p class="portfolio__main__content__text__info">Ao longo da minha trajetória com a Alura, construí alguns projetos propostos em cursos e que podem ser acessados logo abaixo. Além disso, no meu GitHub, tenho outros projetos desenvolvidos ao longo da minha formação:
+                </p>
+            </div>
+
+            <section class="portfolio__main__image__project">
+                <div>
+                    <a href="https://eduardoassuncao.github.io/projeto-pong/" target="_blank">
+                        <img class="portfolio__image__include__portfolio" src="Pong.png" alt="Foto do include">
+                        <div class="portfolio__image__include__border__portfolio"></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://eduardoassuncao.github.io/projeto-alura-midi/" target="_blank">
+                        <img class="portfolio__image__include__portfolio" src="AluraMid.png" alt="Foto do include">
+                        <div class="portfolio__image__include__border__portfolio"></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://eduardoassuncao.github.io/robotron-2000/" target="_blank">
+                        <img class="portfolio__image__include__portfolio" src="Robotron.png" alt="Foto do include">
+                        <div class="portfolio__image__include__border__portfolio"></div>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="portfolio__footer">
+        <hr class="footer__line">
+        <img class="footer__image" src="Logo Alura Include.png" alt="alura INLCUDE">
+        <p class="footer__text">Desenvolvido por Eduardo Assunção</p>
+    </footer>
+    
+</body>
+</html>
