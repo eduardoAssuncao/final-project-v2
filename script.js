@@ -29,3 +29,16 @@ function ativarModoClaro() {
   body.classList.add('light-mode');
   body.classList.remove('dark-mode');
 }
+
+
+// hover de icone para topo
+window.addEventListener('scroll', function() {
+  const icone = document.getElementById('arrow__page');
+  const scrollTop = window.scrollY;
+
+  if (scrollTop > 500) {
+    icone.style.top = '36rem';
+  } else {
+    icone.style.top = '-40rem';
+  }
+});

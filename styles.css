@@ -14,8 +14,8 @@
 
     --opacity-background: 0.1;
 
-    --fonte-primaria: /*"Do Hyeon", sans-serif*/"Acme", sans-serif;
-    --fonte-secundaria: /*"Lato", sans-serif*/ "Indie Flower", sans-serif;
+    --fonte-primaria: "Do Hyeon", sans-serif/*"Acme", sans-serif*/;
+    --fonte-secundaria: "Lato", sans-serif/*"Indie Flower", sans-serif*/;
 }
 
 * {
@@ -78,10 +78,20 @@ button {
     background-color: #ffffff;
 }
 
+#arrow__page{
+    max-width: 30px;
+    max-height: 30px;
+    position:fixed;
+    left: 80rem;
+    top: 37rem;
+    background-color: var(--cor-primaria);
+    border-radius: 50%;    
+}
+
 /*CSS REFERENTE AO BACKGROUND DA PÁGINA HOME*/
 .portfolio::before {
     content: ""; /*propriedade obrigatoria quando usado ::before ou ::after*/
-    position: absolute; /*nos permitir deixar ele do mesmo tamanho do elemento .portfolio e deixar o texto sobreposto*/
+    position: fixed; /*nos permitir deixar ele do mesmo tamanho do elemento .portfolio e deixar o texto sobreposto*/
     inset: 0; /*equivale à top: 0; right: 0; bottom: 0; left: 0 para o tamanho da imagem*/
     background-image: url("Código\ 1.png");
     background-size: cover; /*para fazer com que a imagem ocupe toda a área sem distorcer e sem repetir*/
@@ -96,7 +106,8 @@ button {
     justify-content: center;
     gap: 2rem;
     margin-top: 2.5rem;
-    position: fixed;
+    margin-bottom: 2.5rem;
+    /*position: fixed;*/
     top: 0; /* Define a posição superior como 0 */
     left: 0; /* Define a posição esquerda como 0 */
     width: 100%; /* Define a largura como 100% da tela */
@@ -109,9 +120,9 @@ button {
     gap: .2rem;
 }
 
-[data-context="underline"] {
+/*[data-context="underline"] {
     border-bottom:.2rem solid var(--cor-primaria);
-}
+}*/
 
 .icon__nav {
     width: 20px;
@@ -289,7 +300,7 @@ span {
 /*CSS REFERENTE A IMAGEM DA PAGINA HOME*/
 .portfolio__main__image {
     display: flex;
-    margin: 8rem 8rem 0rem 2rem;
+    margin: 5rem 8rem 0rem 2rem;
     gap: 2rem;
 }
 
@@ -309,7 +320,7 @@ span {
     position: absolute;
     z-index: -1;
     width: 375px;
-    height: 430px;
+    height: 380px;
     border: .3rem solid var(--cor-primaria);
     border-radius: 4%;
     margin: -1rem 0rem 0rem 2rem;
@@ -376,6 +387,15 @@ span {
     
     
 
+    #arrow__page{
+        max-width: 20px;
+        max-height: 20px;
+        position:fixed;
+        left: 23rem;
+        margin-top: 5rem;
+        background-color: var(--cor-primaria);
+        border-radius: 50%;    
+    }
 
     .portfolio__main {
       flex-direction: column;
