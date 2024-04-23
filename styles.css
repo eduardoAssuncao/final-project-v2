@@ -82,7 +82,7 @@ button {
     max-width: 30px;
     max-height: 30px;
     position:fixed;
-    left: 97%;
+    left: 95%;
     margin-top: 3%;
     background-color: var(--cor-primaria);
     border-radius: 50%;    
@@ -402,8 +402,8 @@ span {
         max-width: 20px;
         max-height: 20px;
         position:fixed;
-        left: 23rem;
-        margin-top: 25%;
+        left: 94%;
+        margin-top: 17%;
         background-color: var(--cor-primaria);
         border-radius: 50%;    
     }
