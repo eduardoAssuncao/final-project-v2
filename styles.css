@@ -50,7 +50,7 @@ body {
     --cor-secundaria: #F6F6F6;
     --cor-background: rgb(41, 41, 41);
     --cor-footer-text: #B9B9B9;
-    --button-color: #FF9494;
+    --button-color: var(--cor-primaria);
 }
 
 .button__color {
@@ -82,8 +82,8 @@ button {
     max-width: 30px;
     max-height: 30px;
     position:fixed;
-    left: 80rem;
-    top: 37rem;
+    left: 82rem;
+    margin-top: 3rem;
     background-color: var(--cor-primaria);
     border-radius: 50%;    
 }
@@ -138,6 +138,7 @@ button {
 /*CSS REFERENTE AO CONTEÚDO PRINCIPAL DA PÁGINA HOME*/
 span {
     color: var(--cor-primariaspan);
+    animation: fadeInFadeOut 1s linear infinite;
 }
 
 .portfolio__main {
@@ -203,6 +204,7 @@ span {
     } 
 } 
 
+
 #nome__autor::after {
     content: "👓";
     animation: piscar 1s infinite;
@@ -259,7 +261,13 @@ span {
     border-radius: 10px;
     margin-bottom: 1rem;
     width: 75%;
-    
+    animation: fadeInFadeOut 3s linear infinite;
+}
+
+@keyframes fadeInFadeOut {
+    0%{opacity: 1;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
 }
 
 .icon__text__link {
@@ -324,6 +332,7 @@ span {
     border: .3rem solid var(--cor-primaria);
     border-radius: 4%;
     margin: -1rem 0rem 0rem 2rem;
+    animation: fadeInFadeOut 3s linear infinite;
 }
 
 .portfolio__image__include {
@@ -339,6 +348,7 @@ span {
     box-shadow: -1rem 4rem .5rem 20px var(--cor-primaria);
     border-radius:50%;
     margin: -1rem 0rem 0rem 2rem;
+    animation: fadeInFadeOut 3s linear infinite;
 }
 
 .portfolio__image__include__portfolio {
@@ -354,6 +364,7 @@ span {
     border: .3rem solid var(--cor-primaria);
     border-radius: 4%;
     margin: -12.7rem 0rem 0rem 1.4rem;
+    animation: fadeInFadeOut 3s linear infinite;
 }
 
 /*CSS REFERENTE AO FOOTER DA PAGINA HOME*/
@@ -397,6 +408,14 @@ span {
         border-radius: 50%;    
     }
 
+    .text__nav{
+        content-visibility: hidden;
+    }
+
+    .icon__nav{
+        width: 25px;
+    }
+
     .portfolio__main {
       flex-direction: column;
       gap: 5rem;
@@ -425,8 +444,8 @@ span {
     .portfolio__header__nav {
         display: flex;
         justify-content: center;
-        gap: 1rem;
-        margin-top: 2.5rem;
+        gap: 6rem;
+        margin-top: 3rem;
     }
 
     .portfolio__main__content {
@@ -441,7 +460,7 @@ span {
 
     .portfolio__main__image {
         justify-content: center;
-        margin: 5rem 0 0 0;
+        margin: 2rem 0 0 0;
     }
     
     .portfolio__image {
