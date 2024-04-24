@@ -82,9 +82,27 @@ button {
   max-height: 30px;
   position: fixed;
   left: 95%;
-  margin-top: 8%;
+  margin-top: 3%;
   background-color: var(--cor-primaria);
   border-radius: 50%;
+}
+
+.add__animation__arrow {
+  animation: aparecer 1s ease-in-out;
+}
+
+.remove__animation__arrow {
+  animation: remover 1s ease-in-out forwards;
+}
+
+@keyframes aparecer {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes remover {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
 /*CSS REFERENTE AO BACKGROUND DA PÁGINA HOME*/
@@ -159,6 +177,15 @@ span {
 .portfolio__content__index {
   display: flex;
   flex-direction: row;
+}
+
+.show__content__index{
+  animation: showContent 3s ease-in-out;
+}
+
+@keyframes showContent{
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 
 .portfolio__content__habilidades {
@@ -259,7 +286,7 @@ span {
   border: 0.13rem solid var(--cor-primaria);
   border-radius: 10px;
   margin-bottom: 1rem;
-  width: 40%;
+  width: 50%;
   animation: fadeInFadeOut 3s linear infinite;
 }
 
@@ -333,7 +360,7 @@ span {
   position: absolute;
   z-index: -1;
   width: 375px;
-  height: 380px;
+  height: 420px;
   border: 0.3rem solid var(--cor-primaria);
   border-radius: 4%;
   margin: -1rem 0rem 0rem 2rem;
@@ -406,7 +433,7 @@ span {
     max-height: 20px;
     position: fixed;
     left: 94%;
-    margin-top: 40%;
+    margin-top: 25%;
     background-color: var(--cor-primaria);
     border-radius: 50%;
   }
@@ -457,7 +484,7 @@ span {
     margin: 2rem 0rem 0rem 0rem;
     justify-content: space-around;
     color: var(--cor-secundaria);
-    width: 80%;
+    width: 90%;
     gap: 2rem;
   }
 

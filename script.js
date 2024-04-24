@@ -34,11 +34,28 @@ function ativarModoClaro() {
 // hover de icone para topo
 window.addEventListener('scroll', function() {
   const icone = document.getElementById('arrow__page');
+  const secondSection = document.getElementById('segunda-secao');
+  const thirdSection = document.getElementById('terceira-secao');
   const scrollTop = window.scrollY;
 
   if (scrollTop > 500) {
     icone.style.top = '36rem';
+    icone.classList.add('add__animation__arrow');
+    icone.classList.remove('remove__animation__arrow');
   } else {
-    icone.style.top = '-40rem';
+    icone.classList.remove('add__animation__arrow');
+    icone.classList.add('remove__animation__arrow');
+  }
+
+  if(scrollTop < 100){
+    secondSection.classList.remove('show__content__index');
+    thirdSection.classList.remove('show__content__index')
+  }
+
+  if(scrollTop > 300){
+    secondSection.classList.add('show__content__index');
+  }
+  if(scrollTop > 1500){
+    thirdSection.classList.add('show__content__index')
   }
 });
