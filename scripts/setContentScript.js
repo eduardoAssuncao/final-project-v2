@@ -18,6 +18,10 @@ const textLinkDiv4 = document.querySelector("#div4__link").href = "https://eduar
 const textLinkDiv5 = document.querySelector("#div5__link").href = "https://github.com/eduardoAssuncao/voll_med/tree/main/api/api";
 const textLinkDiv6 = document.querySelector("#div6__link").href = "https://www.newgrounds.com/portal/view/780020";
 
+const firstLogoFooter = document.querySelector("#logo-mateus").src = "./images/LogoMateus.png";
+const SecondLogoFooter = document.querySelector("#logo-alura").src = "./images/Logo Alura Include.png";
+const ThirdLogoFooter = document.querySelector("#logo-fapema").src = "./images/LogoFapema.png";
+
 firstSectionTitle.innerHTML = `<span style="color: orange">public </span
 ><span style="color: rgb(255, 191, 0)">void </span
 ><span style="color: rgb(0, 105, 0)">setName </span

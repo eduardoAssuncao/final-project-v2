@@ -413,6 +413,11 @@ span {
   flex-direction: column;
 }
 
+.portfolio__footer__logo{
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer__image {
   width: 7%;
   align-self: center;
@@ -556,6 +561,11 @@ span {
     width: 12%;
     align-self: center;
     margin-bottom: 1rem;
+  }
+
+  .portfolio__footer__logo{
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .body__line {
