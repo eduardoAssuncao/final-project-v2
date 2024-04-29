@@ -1,26 +1,50 @@
-const firstSectionTitle = document.querySelector("#primeira-secao .portfolio__main__content__text__title");
-const firstSectionContent = document.querySelector("#primeira-secao .portfolio__main__content__text__info");
+const firstSectionTitle = document.querySelector(
+  "#primeira-secao .portfolio__main__content__text__title"
+);
+const firstSectionContent = document.querySelector(
+  "#primeira-secao .portfolio__main__content__text__info"
+);
 
-const secondSectionTitle = document.querySelector("#segunda-secao .portfolio__main__content__text__title");
-const secondSectionContent = document.querySelector("#segunda-secao .portfolio__main__content__text__info");
+const secondSectionTitle = document.querySelector(
+  "#segunda-secao .portfolio__main__content__text__title"
+);
+const secondSectionContent = document.querySelector(
+  "#segunda-secao .portfolio__main__content__text__info"
+);
 
-const thirdSectionTitle = document.querySelector("#terceira-secao .portfolio__main__content__text__title");
-const thirdSectionContent = document.querySelector("#terceira-secao .portfolio__main__content__text__info");
+const thirdSectionTitle = document.querySelector(
+  "#terceira-secao .portfolio__main__content__text__title"
+);
+const thirdSectionContent = document.querySelector(
+  "#terceira-secao .portfolio__main__content__text__info"
+);
 
-const textLinkGitHub = document.querySelector("#github__link").href = "http://github.com/eduardoAssuncao";
-const textLinkLinkedin = document.querySelector("#linkedin__link").href = "https://linkedin.com/in/eduardo-assunção";
-const textLinkCertificado = document.querySelector("#certificado__link").href = "https://github.com/eduardoAssuncao/certificados-alura/blob/main/Certificado%20Alura.pdf";
+const textLinkGitHub = (document.querySelector("#github__link").href =
+  "http://github.com/eduardoAssuncao");
+const textLinkLinkedin = (document.querySelector("#linkedin__link").href =
+  "https://linkedin.com/in/eduardo-assunção");
+const textLinkCertificado = (document.querySelector("#certificado__link").href =
+  "https://github.com/eduardoAssuncao/certificados-alura/blob/main/Certificado%20Alura.pdf");
 
-const textLinkDiv1 = document.querySelector("#div1__link").href = "https://eduardoassuncao.github.io/projeto-pong/";
-const textLinkDiv2 = document.querySelector("#div2__link").href = "https://eduardoassuncao.github.io/projeto-alura-midi/";
-const textLinkDiv3 = document.querySelector("#div3__link").href = "https://eduardoassuncao.github.io/robotron-2000/";
-const textLinkDiv4 = document.querySelector("#div4__link").href = "https://eduardoassuncao.github.io/projeto-fokus/";
-const textLinkDiv5 = document.querySelector("#div5__link").href = "https://github.com/eduardoAssuncao/voll_med/tree/main/api/api";
-const textLinkDiv6 = document.querySelector("#div6__link").href = "https://www.newgrounds.com/portal/view/780020";
+const textLinkDiv1 = (document.querySelector("#div1__link").href =
+  "https://eduardoassuncao.github.io/projeto-pong/");
+const textLinkDiv2 = (document.querySelector("#div2__link").href =
+  "https://eduardoassuncao.github.io/projeto-alura-midi/");
+const textLinkDiv3 = (document.querySelector("#div3__link").href =
+  "https://eduardoassuncao.github.io/robotron-2000/");
+const textLinkDiv4 = (document.querySelector("#div4__link").href =
+  "https://eduardoassuncao.github.io/projeto-fokus/");
+const textLinkDiv5 = (document.querySelector("#div5__link").href =
+  "https://github.com/eduardoAssuncao/voll_med/tree/main/api/api");
+const textLinkDiv6 = (document.querySelector("#div6__link").href =
+  "https://www.newgrounds.com/portal/view/780020");
 
-const firstLogoFooter = document.querySelector("#logo-mateus").src = "./images/LogoMateus.png";
-const SecondLogoFooter = document.querySelector("#logo-alura").src = "./images/Logo Alura Include.png";
-const ThirdLogoFooter = document.querySelector("#logo-fapema").src = "./images/LogoFapema.png";
+const firstLogoFooter = (document.querySelector("#logo-mateus").src =
+  "./images/LogoMateus.png");
+const SecondLogoFooter = (document.querySelector("#logo-alura").src =
+  "./images/Logo Alura Include.png");
+const ThirdLogoFooter = (document.querySelector("#logo-porto").src =
+  "./images/Logo-Porto-do-Itaqui.png");
 
 firstSectionTitle.innerHTML = `<span style="color: orange">public </span
 ><span style="color: rgb(255, 191, 0)">void </span
