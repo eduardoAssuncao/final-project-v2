@@ -1,3 +1,5 @@
+const heatIcon = document.querySelector(".head__icon");
+const heatTitle = document.querySelector(".head__title");
 
 const body = document.querySelector("body");
 const lightModeButton = document.querySelector(".dark__mode__icon");
@@ -43,14 +45,20 @@ window.addEventListener("scroll", function () {
   }
 
   if (scrollTop < 100) {
+    headTitle.innerHTML = "Home";
+    headIcon.href = "./images/Home.png";
     secondSection.classList.remove("show__content__index");
     thirdSection.classList.remove("show__content__index");
   }
 
   if (scrollTop > 200) {
+    headTitle.innerHTML = "Habilidades";
+    headIcon.href = "./images/Desktop.png";
     secondSection.classList.add("show__content__index");
   }
   if (scrollTop > 1000) {
+    headTitle.innerHTML = "Projetos";
+    headIcon.href = "./images/Heart.png";
     thirdSection.classList.add("show__content__index");
   }
 });
