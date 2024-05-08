@@ -1,6 +1,3 @@
-const heatIcon = document.querySelector(".head__icon");
-const heatTitle = document.querySelector(".head__title");
-
 const body = document.querySelector("body");
 const lightModeButton = document.querySelector(".dark__mode__icon");
 
@@ -30,6 +27,8 @@ function ativarModoClaro() {
 
 // hover de icone para topo e de surgimento de conteudo
 window.addEventListener("scroll", function () {
+  const headIcon = document.querySelector(".head__icon");
+  const headTitle = document.querySelector(".head__title");
   const icone = document.getElementById("arrow__page");
   const secondSection = document.getElementById("segunda-secao");
   const thirdSection = document.getElementById("terceira-secao");
@@ -52,6 +51,8 @@ window.addEventListener("scroll", function () {
   }
 
   if (scrollTop > 200) {
+    headTitle.innerHTML = "Habilidades";
+    headIcon.href = "./images/Desktop.png";
     headTitle.innerHTML = "Habilidades";
     headIcon.href = "./images/Desktop.png";
     secondSection.classList.add("show__content__index");
